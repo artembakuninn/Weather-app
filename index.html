@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="..//weather app/style/normalize.css">
+    <link rel="stylesheet" href="..//weather app/style/main.css">
+    
+   
+</head>
+<body>
+    <header class="header">
+
+        <nav class="header-nav">
+             <!---<a href="#" class="header-nav-btn"><i href="#" class="header-nav__item fas fa-bars"></i></a>-->    
+            <div class="header-logo__item">Weather app</div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section class="info">
+
+            <div class="info-icon">
+                <img src="..//weather app/img/sc.svg" class="info-icon__item" alt="">
+            </div>
+
+            <div class="info-temp">
+                <div class="info-temp_item"><span>24</span>°C</div>
+            </div>
+
+            <div class="info-city-items">
+                <span class="info-city__name">Ярославль</span>
+                <span class="info-city__time">7:00</span>
+            </div>
+             <!---Сдеалть что бы город появлялся взависимости от местоположения-->
+
+            <div class="info-city">  
+               
+                <div class="info-city__probability info-city-mdr">                    
+                    <span>30%</span> 
+                    <span>Вероятноcть</span> 
+                    <span>дождя</span>                    
+                </div>
+
+                <div class="info-city__humidity info-city-mdr">
+                    <span>30%</span>
+                    <span>Влажность</span> 
+                </div>
+
+                <div class="info-city__pressure info-city-mdr">
+                    <span>700</span>
+                    <span>Давление</span> 
+                </div>
+
+                <div class="info-city__wind info-city-mdr">
+                    <span>20 км/ч</span>
+                    <span>Скорость</span> 
+                    <span>ветра</span> 
+                </div>
+
+            </div>
+                
+        </section>
+
+        <section class="feature">
+
+            <div class="feature-nav">
+                <a href="#" class="feature-nav__item">Сегодня</a>
+                <a href="#" class="feature-nav__item">Завтра</a>
+                <a href="#" class="feature-nav__item">7 дней</a>
+            </div>
+
+            <div class="weather-feature-container">
+
+                <div class="feature-weather">
+                    <div class="feature-weather__time">9:00</div>
+                    <img src="../weather app/img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
+
+                <div class="feature-weather">
+                    <div class="feature-weather__time">9:00</div>
+                    <img src="../weather app/img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
+
+                <div class="feature-weather">
+                    <div class="feature-weather__time">9:00</div>
+                    <img src="../weather app/img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
+
+                <div class="feature-weather">
+                    <div class="feature-weather__time">9:00</div>
+                    <img src="../weather app/img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+</html>

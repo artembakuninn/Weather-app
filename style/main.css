@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #262931;
+  color: #686c71;
+}
+
+/*Хэдер*/
+
+.header-nav {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.header-nav__item {
+  margin-left: 20px;
+  color: #fff;
+}
+.fas .fa-bars {
+  font-size: 30px;
+}
+.header-logo__item {
+  margin-right: 0 auto;
+}
+
+/* Инфо */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-icon {
+  width: 70px;
+}
+.info-icon__item {
+  width: 100%;
+}
+.info-temp {
+  margin-bottom: 10px;
+}
+.info-temp_item {
+  font-size: 80px;
+  color: #fff;
+}
+.info-city {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+
+  color: #fff;
+  flex-wrap: wrap;
+}
+.info-city-items {
+  margin-bottom: 30px;
+}
+/*Модификатор выравнивания*/
+.info-city-mdr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-city__probability {
+}
+.info-city__humidity {
+}
+.info-city__pressure {
+}
+.info-city__wind {
+  padding-top: 10px;
+}
+/*Прогноз*/
+
+.feature {
+}
+.feature-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.feature-nav__item {
+  text-decoration: none;
+  color: #686c71;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+.feature-nav__item:active {
+  border-bottom: 2px #ea6120 solid;
+  color: #fff;
+}
+.feature-nav__item:focus {
+  border-bottom: 2px #ea6120 solid;
+  color: #fff;
+}
+.weather-feature-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.feature-weather {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ea6120;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.feature-weather:focus {
+  background-color: #ea6120;
+}
+.feature-weather:active {
+  background-color: #ea6120;
+}
+.feature-weather__time {
+}
+.feature-weather__icon {
+}
+.feature-weather__temp {
+}
