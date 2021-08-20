@@ -6,6 +6,11 @@ $.getJSON(jsonFile, function (data) {
     dataTemp = Math.round(dataTemp);
     $("#dataTemp").text(dataTemp);
 
+    // Текущая Влажность
+    let dataHum = data.current.humidity;
+    dataHum = Math.round(dataHum);
+    $("#dataHum").text(dataHum);
+
     // +1 ч
     let dataTemp1 = data.hourly[0].temp;
     dataTemp1 = Math.round(dataTemp1);
@@ -21,6 +26,6 @@ $.getJSON(jsonFile, function (data) {
     $("#dataTime2").text(dataTime2.getHours() + ':00');
 
 
-    
+
 
 });
