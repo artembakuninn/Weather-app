@@ -33,7 +33,7 @@
 
         <nav class="header-nav">
             <!---<a href="#" class="header-nav-btn"><i href="#" class="header-nav__item fas fa-bars"></i></a>-->
-            <div class="header-logo__item">Weather app</div>
+            <h1 class="header-logo__item">Weather app</h1>
         </nav>
 
     </header>
@@ -52,7 +52,6 @@
 
             <div class="info-city-items">
                 <span class="info-city__name">Ярославль</span>
-                <span class="info-city__time">7:00</span>
             </div>
             <!---Сдеалть что бы город появлялся взависимости от местоположения-->
 
@@ -79,47 +78,102 @@
                     <span>Скорость</span>
                     <span>ветра</span>
                 </div>
-
             </div>
-
         </section>
 
         <section class="feature">
+            <h2 class="feature-weather-tittle">Почасовой прогноз</h2>
+            <div class="feature-weather-container"> 
+                <div class="feature-weather">
+                    <div class="feature-weather__time">Сейчас</div>
+                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
 
-            <div class="feature-nav">
-                <a href="#" class="feature-nav__item">Сегодня</a>
-                <a href="#" class="feature-nav__item">Завтра</a>
-                <a href="#" class="feature-nav__item">7 дней</a>
+                <div class="feature-weather">
+                    <div class="feature-weather__time">9:00</div>
+                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
+
+                <div class="feature-weather">
+                    <div class="feature-weather__time">10:00</div>
+                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
+
+                <div class="feature-weather">
+                    <div class="feature-weather__time">11:00</div>
+                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
+                    <div class="feature-weather__temp">24°C</div>
+                </div>
             </div>
+        </section>
 
-            <div class="weather-feature-container">
+        <section class="daily">
 
-                <div class="feature-weather">
-                    <div class="feature-weather__time">9:00</div>
-                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
-                    <div class="feature-weather__temp">24°C</div>
-                </div>
+            <h2 class="daily-tittle">Суточный прогноз</h2>
 
-                <div class="feature-weather">
-                    <div class="feature-weather__time">9:00</div>
-                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
-                    <div class="feature-weather__temp">24°C</div>
-                </div>
-
-                <div class="feature-weather">
-                    <div class="feature-weather__time">9:00</div>
-                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
-                    <div class="feature-weather__temp">24°C</div>
-                </div>
-
-                <div class="feature-weather">
-                    <div class="feature-weather__time">9:00</div>
-                    <img src="./img/cr.svg" alt="weather-icon" class="feature-weather__icon">
-                    <div class="feature-weather__temp">24°C</div>
-                </div>
-
-            </div>
-
+            <div class="daily-table-container">
+                <table class="daily-table">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Утро</th>
+                        <th>День</th>
+                        <th>Вечер</th>
+                    </tr>
+                    <tr>
+                        <td>Понедельник</td>
+                        <td class="daily-table-icon"><img class="daily-table-icon__item" src="./img/c.svg" alt="daily-icon"></td>
+                        <td>24°</td>
+                        <td>24°</td>
+                        <td>24°</td>                                       
+                    </tr>
+                    <tr>
+                        <td>Вторник</td>
+                        <td class="daily-table-icon"><img class="daily-table-icon__item" src="./img/c.svg" alt="daily-icon"></td>
+                        <td>24°</td>
+                        <td>24°</td>
+                        <td>24°</td>                   
+                    </tr>
+                    <tr>
+                        <td>Среда</td>
+                        <td class="daily-table-icon"><img class="daily-table-icon__item" src="./img/c.svg" alt="daily-icon"></td>
+                        <td>24°</td>
+                        <td>24°</td>
+                        <td>24°</td>                    
+                    </tr>
+                    <tr>
+                        <td>Четверг</td>
+                        <td class="daily-table-icon"><img class="daily-table-icon__item" src="./img/c.svg" alt="daily-icon"></td>
+                        <td>24°</td>
+                        <td>24°</td>
+                        <td>24°</td>                    
+                    </tr>
+                    <tr>
+                        <td>Пятница</td>
+                        <td class="daily-table-icon"><img class="daily-table-icon__item" src="./img/c.svg" alt="daily-icon"></td>
+                        <td>24°</td>
+                        <td>24°</td>
+                        <td>24°</td>                   
+                    </tr>
+                    <tr>
+                        <td>Суббота</td>
+                        <td class="daily-table-icon"><img class="daily-table-icon__item" src="./img/c.svg" alt="daily-icon"></td>
+                        <td>24°</td>
+                        <td>24°</td>
+                        <td>24°</td>                
+                    </tr>
+                    <tr>
+                        <td>Воскресенье</td>
+                        <td class="daily-table-icon"><img class="daily-table-icon__item" src="./img/c.svg" alt="daily-icon"></td>
+                        <td>24°</td>
+                        <td>24°</td>
+                        <td>24°</td>                    
+                    </tr>
+                </table>
+        </div>
         </section>
 
 
