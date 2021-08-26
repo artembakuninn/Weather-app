@@ -11,6 +11,16 @@ $.getJSON(jsonFile, function (data) {
     dataHum = Math.round(dataHum);
     $("#dataHum").text(dataHum);
 
+    // Текущая Скорость ветра
+    let dataSpeed = data.current.wind_speed;
+    dataSpeed = Math.round(dataSpeed);
+    $("#dataSpeed").text(dataSpeed);
+
+    // Текущее давление
+    let dataPressure = data.current.pressure;
+    dataPressure = Math.round(dataPressure);
+    $("#dataPressure").text(dataPressure);
+
     // +1 ч
     let dataTemp1 = data.hourly[0].temp;
     dataTemp1 = Math.round(dataTemp1);
